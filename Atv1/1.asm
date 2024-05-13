@@ -1,7 +1,7 @@
 main: 
     li a7, 5
     ecall
-    mv s0, a0 # s0 = a0
+    mv s0, a0 # s0 = a
     ecall
     mv s1, a0 # s1 = b
     ecall
