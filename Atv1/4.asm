@@ -36,7 +36,7 @@ ordena:
                 j interno
 
         continue:
-            blt t2, 1, fim_externo  # Se não houve trocas (t2 = 0), termina o loop externo
+            beqz t2, fim_externo  # Se não houve trocas (t2 = 0), termina o loop externo
             addi t3, t3, 1  # Incrementa o índice de loop externo
             li t4, 0  # Reinicia o índice de loop interno
             j externo
